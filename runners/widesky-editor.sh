@@ -24,4 +24,4 @@ fi
 # Always set -i to support piped and terminal input in run/exec
 DOCKER_RUN_OPTIONS="$DOCKER_RUN_OPTIONS -i"
 
-exec docker run $DOCKER_RUN_OPTIONS -w "$(pwd)" $IMAGE ${EDITOR} $@
+exec docker run $DOCKER_RUN_OPTIONS -w "$(pwd)" $IMAGE ${EDITOR} "$@"
