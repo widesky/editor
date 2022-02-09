@@ -21,7 +21,7 @@ if [ -t 0 ] && [ -t 1 ]; then
     DOCKER_RUN_OPTIONS="$DOCKER_RUN_OPTIONS -t"
 fi
 
-# Use network host mode
+# `localhost` to be treated as the host's local network. Not the containers.
 DOCKER_RUN_OPTIONS="$DOCKER_RUN_OPTIONS --network host"
 
 # Always set -i to support piped and terminal input in run/exec
