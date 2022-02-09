@@ -21,6 +21,9 @@ if [ -t 0 ] && [ -t 1 ]; then
     DOCKER_RUN_OPTIONS="$DOCKER_RUN_OPTIONS -t"
 fi
 
+# Use network host mode
+DOCKER_RUN_OPTIONS="$DOCKER_RUN_OPTIONS --network host"
+
 # Always set -i to support piped and terminal input in run/exec
 DOCKER_RUN_OPTIONS="$DOCKER_RUN_OPTIONS -i"
 
