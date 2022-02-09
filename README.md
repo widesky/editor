@@ -5,6 +5,9 @@ This is a command line interface for the WideSky Server.
 To get started, all you have to do is `clone` this repository to your local machine.
 Then try out one of the following usage or do `./runners/widesky-editor.sh --help`.
 
+It is also recommended that you periodically do a `docker pull wideskycloud/editor:latest`
+to pull down the latest editor tool image from our [docker repository](https://hub.docker.com/repository/docker/wideskycloud/editor).
+
 ## Usage
 
 The URI, client identifier and client secret must be given on the command line.
