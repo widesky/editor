@@ -1,6 +1,6 @@
 # WideSky-editor
 
-This is a command line interface for the WideSky API Server.
+This is a command line interface for the WideSky Server.
 
 To get started, all you have to do is `clone` this repository to your local machine.
 Then try out one of the following usage or do `./runners/widesky-editor.sh --help`.
@@ -31,12 +31,25 @@ number or combination of these may be given.
 
 The entities are dumped to the output as YAML "documents".
 
+Example:
+```
+./widesky-editor.sh --output sites.yaml --uri https://me.on.widesky.cloud/widesky/ --client-id abcdefg --client-secret ssshh --username user100@widesky.cloud --password 123x456 --filter site 
+```
+
+This command will do a read operation base on the specified `filter` and write the output to a file (sites.yaml) containing the entities.
+
 ### Loading entities: `load`
 
 `load` is actually a tool for performing updates, creations and deletions on
 entities.  It can take any number of YAML files, each which contain one or more
 "documents" that describe a single instruction to be performed on a set of
 entities, which are described either by filter or by ID.
+
+```
+./widesky-editor.sh --uri https://me.on.widesky.cloud/widesky/ --client-id apple100 --client-secret ssshhh --username user100@widesky.cloud --password 123x456 --load create_sites.yaml 
+```
+
+This command will read the content of `create_sites.yaml` file and perform the required `create`, `update` or `delete` operations against the targeted WideSky server.
 
 #### Common parameters
 
