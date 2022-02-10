@@ -2,11 +2,16 @@
 
 This is a command line interface for the WideSky Server.
 
-To get started, all you have to do is `clone` this repository to your local machine.
-Then try out one of the following usage or do `./runners/widesky-editor.sh --help`.
+## Installation
 
+You can install the `WideSky-editor` in two steps by;
+1. Download the runner, `curl
+    https://raw.githubusercontent.com/widesky/widesky-editor/master/runners/editor.sh
+    -o /usr/local/bin/widesky-editor`
+2. Update the permission; `sudo chmod +x /usr/local/bin/widesky-editor`
+ 
 It is also recommended that you periodically do a `docker pull wideskycloud/editor:latest`
-to pull down the latest editor tool image from our [docker repository](https://hub.docker.com/repository/docker/wideskycloud/editor).
+to pick up any new updates for the toolkit from our [docker repository](https://hub.docker.com/repository/docker/wideskycloud/editor).
 
 ## Usage
 
