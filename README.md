@@ -5,8 +5,8 @@ This is a command line interface for the WideSky Server.
 ## Installation
 
 You can install the `WideSky-editor` in two steps by;
-1. Download the runner, `curl
-    https://raw.githubusercontent.com/widesky/widesky-editor/master/runners/editor.sh
+1. Download the runner, `sudo curl
+    https://raw.githubusercontent.com/widesky/editor/master/runners/widesky-editor.sh
     -o /usr/local/bin/widesky-editor`
 2. Update the permission; `sudo chmod +x /usr/local/bin/widesky-editor`
  
